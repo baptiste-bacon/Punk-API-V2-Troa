@@ -1,0 +1,22 @@
+.footer {
+  padding: 6rem 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffff;
+
+  border-top: solid 1px#CCCCCC;
+  text-align: center;
+}
+
+.footer__text--left {
+  font-size: 2.4rem;
+  font-family: 'Helvetica Neue';
+  font-weight: 900;
+}
+
+.footer__text--right {
+  font-size: 2.4rem;
+  font-family: 'Helvetica Neue';
+  font-weight: normal;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body data-barba="wrapper">
+    <div class="preloader"></div>
+    <div class="transition__wrapper">
+      <div class="transition transition--yellow"></div>
+      <div class="transition transition--white"></div>
+    </div>
+    <div class="wrapper" data-barba="container" data-barba-namespace="product">
+      <header class="header">
+        <section class="nav nav--product">
+          <div class="nav__wrapper">
+            <div class="nav__logo">
+              <a href="/" class="nav__logo-link">
+                <svg
+                  class="nav__logo-svg"
+                  viewBox="0 0 26 68"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 68H17.3636C23.0909 68 26 64.5269 26 57.672V39.0269C26 33.543 22.4545 31.5323 20.6364 31.0753C22.0909 30.6183 25.0909 28.5161 25.0909 23.9462V8.5914C25.0909 2.37634 22.0909 0 17.4545 0H0V68ZM12.3636 8.5914C13.5455 8.5914 13.7273 9.04838 13.7273 10.2366V26.2312C13.7273 27.4193 13.2727 27.9677 12.3636 27.9677H11.5455V8.5914H12.3636ZM12.6364 36.3763C13.7273 36.3763 14 36.8333 14 38.2043V57.3978C14 58.586 13.8182 59.1344 12.6364 59.1344H11.5455V36.3763H12.6364Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+            <a href="/" class="nav__menu-close">
+              <svg
+                class="nav__menu-svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.21337 11L0 20.2134L1.78663 22L11 12.7866L20.2134 22L22 20.2134L12.7866 11L22 1.78663L20.2134 0L11 9.21338L1.78663 3.8147e-06L0 1.78663L9.21337 11Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <div class="nav__icon">
+              <a href="product.html" class="nav__icon-link">
+                <img src="beerIcon.png" alt="" class="nav__icon-img" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section class="page">
+        <div class="product__wrapper">
+          <div class="product__main" data-animate="product-main">
+            <div class="product__main-media">
+              <img src="beerImage.png" alt="" class="product__main-image" />
+            </div>
+            <h1 class="product__main-title">Product</h1>
+          </div>
+          <div class="product__informations" data-animate="product-informations">
+            <div class="product__informations-main">
+              <h2 class="product__informations-title">Product</h2>
+              <h3 class="product__informations-tagline">Tagline</h3>
+              <p class="product__informations-description">Product description</p>
+            </div>
+            <div class="product__specifications">
+              <h3 class="product__specifications-title">SPECIFICATIONS</h3>
+              <ul class="product__specifications-list">
+                <li class="specifications-list__item">
+                  <h4 class="specifications-list__item-title">FIRST BREWED</h4>
+                </li>
+                <li class="specifications-list__item">
+                  <h4 class="specifications-list__item-title">ABV</h4>
+                </li>
+                <li class="specifications-list__item">
+                  <h4 class="specifications-list__item-title">IBU</h4>
+                </li>
+                <li class="specifications-list__item">
+                  <h4 class="specifications-list__item-title">EBC / SRM</h4>
+                </li>
+              </ul>
+            </div>
+            <div class="product__ingredients">
+              <h3 class="product__ingredients-title">INGREDIENTS</h3>
+              <ul class="product__ingredients-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p class="footer__text--left">CHEERS</p>
+      <p class="footer__text--right">PUNK API V2</p>
+    </footer>
+  </body>
+</html>

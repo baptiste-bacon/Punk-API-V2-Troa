@@ -1,0 +1,16 @@
+@import './base/reset.scss';
+@import './base/fonts.scss';
+@import './base/base.scss';
+
+@import './shared/text';
+
+@import './utils/mixins';
+@import './utils/variables.scss';
+
+@import './components/navigation.scss';
+@import './components/footer.scss';
+@import './components/preloader.scss';
+@import './components/transition';
+
+@import './pages/home.scss';
+@import './pages/product.scss';

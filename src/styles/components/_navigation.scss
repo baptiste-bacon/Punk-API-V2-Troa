@@ -1,0 +1,62 @@
+.nav {
+  position: fixed;
+  height: 12.8rem;
+  width: 100%;
+  background: #ffff;
+  border-bottom: solid 1px#CCCCCC;
+  z-index: 9;
+}
+
+.nav__wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12rem;
+}
+
+.nav__logo {
+  position: relative;
+  width: 2.6rem;
+  height: 6.8rem;
+}
+
+.nav__logo-svg {
+  @extend %cover;
+}
+
+.nav__menu-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.2rem;
+  height: 2.2rem;
+
+  &:hover .nav__menu-svg {
+    transform: rotate(90deg);
+  }
+}
+
+.nav__menu-svg {
+  @extend %cover;
+
+  transform: rotate(0);
+  transition: transform ease-in-out 0.5s;
+}
+
+.nav__icon {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+
+  &:hover {
+    transform: scale(1.2) rotate(15deg);
+  }
+}
+
+.nav__icon-img {
+  @extend %cover;
+}

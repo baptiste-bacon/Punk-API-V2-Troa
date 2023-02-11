@@ -1,0 +1,162 @@
+.product__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  padding: 6rem;
+}
+
+.product__main {
+  position: relative;
+  width: 78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product__main-media {
+  position: relative;
+
+  width: 21rem;
+  height: 81rem;
+}
+
+.product__main-image {
+  @extend %cover;
+}
+
+.product__main-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Druk Cond Super';
+  font-size: 40rem;
+  color: #ffcf00;
+  text-align: center;
+  line-height: 30.8rem;
+  z-index: -1;
+
+  text-transform: uppercase;
+}
+
+.product__informations {
+  width: 48rem;
+}
+
+.product__informations-main {
+  margin-bottom: 6rem;
+}
+
+.product__informations-title {
+  @extend %title-80;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  width: 28rem;
+}
+
+.product__informations-tagline {
+  @extend %description-20;
+  margin-bottom: 3rem;
+}
+
+.product__informations-description {
+  @extend %description-14;
+
+  line-height: 2.2rem;
+}
+
+.product__specifications {
+  margin-bottom: 3rem;
+}
+
+.product__specifications-title {
+  @extend %title-20;
+  margin-bottom: 2rem;
+}
+
+.product__specifications-list {
+}
+
+.specifications-list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+  }
+
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+  }
+}
+
+.specifications-list__item-title {
+  @extend %title-14;
+}
+
+.specifications-list__item-value {
+  @extend %description-14;
+}
+
+.product__ingredients {
+}
+.product__ingredients-title {
+  @extend %title-20;
+  margin-bottom: 2rem;
+}
+.product__ingredients-list {
+}
+.ingredients-list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+  }
+
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+  }
+}
+.ingredients-list__item-title {
+  @extend %title-14;
+}
+
+.ingredients-list__types-list {
+}
+
+.ingredients-list__types-item {
+  @extend %description-14;
+
+  text-align: right;
+  line-height: 2.2rem;
+}
